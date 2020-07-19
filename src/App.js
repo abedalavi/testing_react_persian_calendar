@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import PersianCalendar from 'react_simple_persain_calendar';
+import PersianCalendar from 'react_simple_persian_calendar';
 function App() {
   const [selectedTime, setSelecteTime] = useState();
   const onChange = (date) => {
@@ -13,11 +13,11 @@ function App() {
   return (
     <Fragment>
       <div class="jumbotron text-center">
-        <h1 class="display-4 ">React Simple Persain Calendar</h1>
+        <h1 class="display-4 ">React Simple Persian Calendar</h1>
         <p class="lead">
           This is the page in which you can see{" "}
-          <a href="https://www.npmjs.com/package/react_simple_persain_calendar">
-            react_simple_persain_calendar
+          <a href="https://www.npmjs.com/package/react_simple_persian_calendar">
+            react_simple_Persian_calendar
           </a>{" "}
           component example.
         </p>
@@ -39,11 +39,11 @@ function App() {
             </div>
             <div className="col text-center">
               <h1>
-                <a href="https://github.com/abedalavi/react_simple_persain_calendar">
+                <a href="https://github.com/abedalavi/react_simple_Persian_calendar">
                   <i className="fab fa-github"></i>
                 </a>
                 {"    "}
-                <a href="https://www.npmjs.com/package/react_simple_persain_calendar">
+                <a href="https://www.npmjs.com/package/react_simple_Persian_calendar">
                   <i className="fab fa-npm"></i>
                 </a>
               </h1>
