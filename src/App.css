@@ -51,3 +51,19 @@
     font-size: 3.5rem;
   }
 }
+
+.first-column {}
+
+.second-column {}
+
+.rowstyle {
+  height: 350px;
+}
+
+.containerStyle {
+  border: 3px outset rgba(3, 5, 119, 0.63);
+  border-radius: 13px;
+  padding: 20px;
+  
+  background-size: 22px 22px;
+}
