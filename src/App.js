@@ -24,7 +24,9 @@ function App() {
         <hr className="my-4" />
         <div className="container containerStyle">
           <div className="row rowstyle">
-            <div className="col-sm text-center first-column">Without currentTime props:</div>
+            <div className="col-sm text-center first-column">
+              Without currentTime props:
+            </div>
             <div className="col-sm text-center second-column">
               <PersianCalendar
                 onChange={onChange}
@@ -32,13 +34,44 @@ function App() {
               />
             </div>
           </div>
-          <hr/>
+          <hr />
           <div className="row rowstyle">
-            <div className="col-sm text-center first-column">With currentTime: new Date("1987,01,22"):</div>
+            <div className="col-sm text-center first-column">
+              With currentTime: new Date("1987,01,22"):
+            </div>
             <div className="col-sm text-center second-column">
               <PersianCalendar
                 onChange={onChange}
                 currentTime={new Date("1987,01,22")}
+              />
+            </div>
+          </div>
+          <hr />
+          <div className="row rowstyle">
+            <div className="col-sm text-center first-column">
+              With currentPersianTime={"{"}۱۳۳۳/۱۱/۳۰{"}"}:
+            </div>
+            <div className="col-sm text-center second-column">
+              <PersianCalendar
+                onChange={onChange}
+                currentPersianTime={"۱۳۳۳/۱۱/۳۰"}
+              />
+            </div>
+          </div>
+          <hr />
+          <div className="row rowstyle">
+            <div className="col-sm text-center first-column">
+              With both
+              <br/>
+              currentPersianTime={"{"}۱۳۳۳/۱۱/۳۰{"}"} 
+              <br/>
+              currentTime={"{"}new Date("1987,01,22"){"}"}:
+            </div>
+            <div className="col-sm text-center second-column">
+              <PersianCalendar
+                onChange={onChange}
+                currentTime={new Date("1987,01,22")}
+                currentPersianTime={"۱۳۸۶/۱۲/۱۶"}
               />
             </div>
           </div>
