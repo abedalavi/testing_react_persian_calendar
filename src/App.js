@@ -5,10 +5,24 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import PersianCalendar from "react_simple_persian_calendar";
 function App() {
   const [selectedTime, setSelecteTime] = useState();
-  const onChange = (date) => {
+  const [persianTime, setPersianTime] = useState("۱۳۳۳/۱۱/۳۰");
+  const onChange1 = (date) => {
     console.log(date);
     setSelecteTime(date);
   };
+  const onChange2 = (date) => {
+    console.log(date);
+    setSelecteTime(date);
+  };
+  const onChange3 = (date) => {
+    console.log(date);
+    setSelecteTime(date);
+  };
+  const onChange4 = (date) => {
+    console.log(date);
+    setSelecteTime(date);
+  };
+
 
   return (
     <Fragment>
@@ -29,7 +43,7 @@ function App() {
             </div>
             <div className="col-sm text-center second-column">
               <PersianCalendar
-                onChange={onChange}
+                onChange={onChange1}
                 // currentTime={new Date("1987,01,22")}
               />
             </div>
@@ -41,7 +55,7 @@ function App() {
             </div>
             <div className="col-sm text-center second-column">
               <PersianCalendar
-                onChange={onChange}
+                onChange={onChange2}
                 currentTime={new Date("1987,01,22")}
               />
             </div>
@@ -53,8 +67,8 @@ function App() {
             </div>
             <div className="col-sm text-center second-column">
               <PersianCalendar
-                onChange={onChange}
-                currentPersianTime={"۱۳۳۳/۱۱/۳۰"}
+                onChange={onChange3}
+                currentPersianTime={persianTime}
               />
             </div>
           </div>
@@ -63,13 +77,13 @@ function App() {
             <div className="col-sm text-center first-column">
               With both
               <br/>
-              currentPersianTime={"{"}۱۳۳۳/۱۱/۳۰{"}"} 
+              currentPersianTime={"{"}۱۳۸۶/۱۲/۱۶{"}"} 
               <br/>
               currentTime={"{"}new Date("1987,01,22"){"}"}:
             </div>
             <div className="col-sm text-center second-column">
               <PersianCalendar
-                onChange={onChange}
+                onChange={onChange4}
                 currentTime={new Date("1987,01,22")}
                 currentPersianTime={"۱۳۸۶/۱۲/۱۶"}
               />
