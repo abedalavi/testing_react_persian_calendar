@@ -45,7 +45,6 @@ function App() {
             <div className="col-sm text-center second-column">
               <PersianCalendar
                 onChange={onChange1}
-                // currentTime={new Date("1987,01,22")}
               />
             </div>
           </div>
@@ -87,6 +86,18 @@ function App() {
                 onChange={onChange4}
                 currentTime={new Date("1987,01,22")}
                 currentPersianTime={"۱۳۸۶/۱۲/۱۶"}
+              />
+            </div>
+          </div>
+          <hr />
+          <div className="row rowstyle">
+            <div className="col-sm text-center first-column">
+              with startBlank={"{"}true{"}"}
+            </div>
+            <div className="col-sm text-center second-column">
+              <PersianCalendar
+                onChange={onChange4}
+                startBlank={true}
               />
             </div>
           </div>
