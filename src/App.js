@@ -101,6 +101,18 @@ function App() {
               />
             </div>
           </div>
+          <hr />
+          <div className="row rowstyle">
+            <div className="col-sm text-center first-column">
+              with textStyle="myStyle"
+            </div>
+            <div className="col-sm text-center second-column">
+              <PersianCalendar
+                onChange={onChange4}
+                textStyle="myStyle"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <footer className="footer mt-auto py-3">
